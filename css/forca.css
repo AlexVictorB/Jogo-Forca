@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: rgb(9, 97, 175);
+    font-family: "Roboto", sans-serif;
+  }
+
+
+.forca {
+    fill: transparent;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.forca-base {
+    stroke: rgb(77 77 77);
+    stroke-width: 8px;
+}
+
+.forca-madeira {
+    stroke: rgb(178 114 20);
+    stroke-width: 16px;
+    stroke-linecap: butt;
+}
+
+.forca-corda {
+    stroke: rgb(247 178 57);
+    stroke-linecap: butt;
+}
+
+.forca-parte {
+    stroke: gray;
+    display: none;
+}

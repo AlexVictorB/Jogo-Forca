@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/forca.css">
+    <title>Forca</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="forca">
+            <svg height="300" width="200" class="forca">
+                <!-- forca -->
+            <line x1="40" y1="20" x2="170" y2="20" class="forca-madeira"/>
+            <line x1="60" y1="70" x2="110" y2="20" class="forca-madeira"/>
+            <line x1="140" y1="28" x2="140" y2="50" class="forca-corda"/>
+            <line x1="60" y1="5" x2="60" y2="230" class="forca-madeira"/>
+            <line x1="20" y1="230" x2="190" y2="230" class="forca-base"/>
+      
+                <!-- cabeça -->
+            <circle cx="140" cy="70" r="20" class="forca-parte" />
+                <!-- corpo -->
+            <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
+                <!-- braços -->
+            <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
+            <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
+                <!-- pernas -->
+            <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
+            <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
+        </svg>
+        </div>
+
+        <div class="game">
+
+            <div class="settings">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                  </svg></a>
+            </div>
+
+            <div class="tip">
+                <h3>Dica</h3>
+                <h2 class="tip-display"></h2>
+            </div>
+            <div class="container-secret-word">
+                <div class="secret-word"></div>
+            </div>
+            <div class="letras-erradas-container">
+                <h3>Letras erradas</h3>
+              </div>
+            <div class="keyboard">
+                <div class="line">
+                    <button class="key" value="A" onclick="insertLetter('A')">A</button>
+                    <button class="key" value="B" onclick="insertLetter('B')">B</button>
+                    <button class="key" value="C" onclick="insertLetter('C')">C</button>
+                    <button class="key" value="D" onclick="insertLetter('D')">D</button>
+                    <button class="key" value="E" onclick="insertLetter('E')">E</button>
+                    <button class="key" value="F" onclick="insertLetter('F')">F</button>
+                    <button class="key" value="G" onclick="insertLetter('G')">G</button>
+                    <button class="key" value="H" onclick="insertLetter('H')">H</button>
+                    <button class="key" value="I" onclick="insertLetter('I')">I</button>
+                    <button class="key" value="J" onclick="insertLetter('J')">J</button>
+                    <button class="key" value="K" onclick="insertLetter('K')">K</button>
+                    <button class="key" value="L" onclick="insertLetter('L')">L</button>
+                    <button class="key" value="M" onclick="insertLetter('M')">M</button>
+                    <button class="key" value="N" onclick="insertLetter('N')">N</button>
+                    <button class="key" value="O" onclick="insertLetter('O')">O</button>
+                    <button class="key" value="P" onclick="insertLetter('P')">P</button>
+                </div>
+    
+                <div class="line">
+    
+                    <button class="key" value="Q" onclick="insertLetter('Q')">Q</button>
+                    <button class="key" value="R" onclick="insertLetter('R')">R</button>
+                    <button class="key" value="S" onclick="insertLetter('S')">S</button>
+                    <button class="key" value="T" onclick="insertLetter('T')">T</button>
+                    <button class="key" value="U" onclick="insertLetter('U')">U</button>
+                    <button class="key" value="V" onclick="insertLetter('V')">V</button>
+                    <button class="key" value="W" onclick="insertLetter('W')">W</button>
+                    <button class="key" value="X" onclick="insertLetter('X')">X</button>
+                    <button class="key" value="Y" onclick="insertLetter('Y')">Y</button>
+                    <button class="key" value="Z" onclick="insertLetter('Z')">Z</button>
+                    <button class="key" value="Ã" onclick="insertLetter('Ã')">Ã</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="aviso-palavra-repetida">
+            Você já usou essa letra!
+        </div>
+
+        <div class="popup-container">
+            <div class="popup">
+              <h2 id="mensagem"></h2>
+              <button id="btn-play" onclick="reloadGame()">
+                Jogar novamente
+              </button>
+            </div>
+        </div>
+
+        <div class="popup-settings">
+                <div class="popup settings">
+                    <h2>Configurações</h2>
+                </div>
+        </div>    
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --color-main: rgb(40, 194, 143);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+
+body{
+    background-image:url(../assets/1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: rgb(252, 251, 243);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5em black;
+
+
+    height: 75%;
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.settings {
+    display: none;
+    flex-direction: row-reverse;
+}
+
+.settings a {
+    color: var(--color-main);
+}
+
+.settings a:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.forca {
+    margin-right: 20px;
+}
+
+.tip h2 {
+    color: rgb(38, 41, 40);
+}
+
+.tip h3 {
+    color: rgb(40, 194, 143);
+    text-decoration: underline;
+}
+
+.tip{
+    margin-bottom: 20px;
+}
+
+.container-secret-word{
+    width: 349px;
+    height: 90px;
+    background: white;
+
+    border: solid 3px rgb(40, 194, 143);
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    color: black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: rgb(6, 52, 37);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+
+.keyboard button {
+    width: 40px;
+    height: 35px;
+
+    margin-top: 5px;
+}
+
+.key {
+    font-weight: 800;
+}
+
+.aviso-palavra-repetida {
+    background-color: rgba(0, 0, 0, 0.81);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 220px;
+    position: absolute;
+    bottom: -55px;
+    transition: transform 0.3s ease-in-out;
+    color: aliceblue;
+}
+  
+.aviso-palavra-repetida p {
+    margin: 0;
+}
+  
+.aviso-palavra-repetida.show {
+    transform: translateY(-50px);
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+  
+.popup {
+    color: rgb(38, 41, 40);
+    background: rgb(252, 251, 243);
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+  
+.popup button {
+    cursor: pointer;
+    background: rgb(40, 194, 143);
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.letras-erradas-container {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.letras-erradas-container h3 {
+    color: rgb(40, 194, 143);
+}
+  
+.letras-erradas-container span {
+    font-weight: 600;
+    color: rgb(196, 31, 31);
+    margin: 0 2px;
+}
+
+.popup-settings {
+    background-color: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    height: 50px;
+}

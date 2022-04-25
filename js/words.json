@@ -1,0 +1,141 @@
+[
+    {
+        "palavra":"Maçã",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Banana",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Melancia",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Manga",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Melão",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Morango",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Laranja",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Limão",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Kiwi",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Abacate",
+        "categoria": "Fruta"
+    },
+
+    {
+        "palavra":"Carro",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Moto",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Bicicleta",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Caminhão",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Avião",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Canoa",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Barco",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Navio",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Submarino",
+        "categoria": "Veiculo"
+    },
+
+    {
+        "palavra":"Gato",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Cachorro",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Peixe",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Girrafa",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Elefante",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Penguim",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Leão",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Coelho",
+        "categoria": "Animal"
+    },
+
+    {
+        "palavra":"Tartagura",
+        "categoria": "Animal"
+    }
+]
