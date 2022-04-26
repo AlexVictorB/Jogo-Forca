@@ -145,4 +145,3 @@ function mostrarAvisoLetraRepetida() {
 function reloadGame() {
     window.location.reload();
   }
-  

@@ -33,14 +33,14 @@ body{
 
 
     height: 75%;
-    width: 600px;
+    max-width: 600px;
 
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-
+/* Botão de configurações desativado*/
 .settings {
     display: none;
     flex-direction: row-reverse;
@@ -186,6 +186,121 @@ body{
     justify-content: center;
 }
 
+.popup-settings.show {
+    display: flex;
+}
+
 .popup{
     height: 50px;
+}
+
+.modal-settings{
+    color: rgb(38, 41, 40);
+    background: rgb(252, 251, 243);
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+
+.background-option {
+    display: flex;
+    gap: 5px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.menu-background {
+    padding: 0.5rem;
+    background: rgb(255, 255, 255);
+
+    border: solid 2px black;
+
+    display: flex;
+    gap: 5px;
+}
+
+.menu-background a:hover {
+    background: rgba(40, 194, 143, 0.5);
+
+}
+
+.menu-background a::selection {
+    background: rgba(40, 194, 143, 0.5);
+}
+
+.button-option{
+    cursor: pointer;
+    background: rgb(40, 194, 143);
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+
+    body{
+        background-image:url(../assets/1.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        background: rgb(252, 251, 243);
+        padding: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 0.5em black;
+    
+    
+        max-height: 600px;
+        max-width: 500px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-secret-word{
+        max-width: 250px;
+        height: 90px;
+        background: white;
+    
+        border: solid 3px rgb(40, 194, 143);
+        border-radius: 10px;
+    
+        margin-bottom: 20px;
+    
+        color: black;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+        color: rgb(6, 52, 37);
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+
+    .popup {
+        height: 90px;
+    }
+    
+
 }
