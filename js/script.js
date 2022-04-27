@@ -26,7 +26,6 @@ for(i in json) {
     categoryList.push(categoryKey)
 }
 
-
 /*console.log(wordList)*/
 
 categoryList = categoryList.filter(function(el , i) {
@@ -124,14 +123,12 @@ function checarJogo() {
     console.log(container.innerText)
   }
 
-
 function desenharForca() {
     const partesCorpo = document.querySelectorAll(".forca-parte");
     for (let i = 0; i < incorretLetter.length; i++) {
       partesCorpo[i].style.display = "block";
     }
   }
-
 
 function mostrarAvisoLetraRepetida() {
     const aviso = document.querySelector(".aviso-palavra-repetida");
@@ -140,7 +137,6 @@ function mostrarAvisoLetraRepetida() {
       aviso.classList.remove("show");
     }, 1000);
   }
-
 
 function reloadGame() {
     window.location.reload();
