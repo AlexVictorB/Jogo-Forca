@@ -342,3 +342,89 @@ body{
     
 
 }
+
+
+@media (max-width: 460px) {
+
+    body{
+        background-image:url(../assets/1.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        background: rgb(252, 251, 243);
+        padding: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 0.5em black;
+    
+    
+        max-height: 500px;
+        max-width: 400px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-secret-word{
+        max-width: 170px;
+        height: 90px;
+        background: white;
+    
+        border: solid 3px rgb(40, 194, 143);
+        border-radius: 10px;
+    
+        margin-bottom: 20px;
+    
+        color: black;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+        color: rgb(6, 52, 37);
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+
+    .keyboard button {
+        width: 20px;
+        height: 20px;
+    
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    
+    .key {
+        font-weight: 700;
+    }
+
+    .aviso-palavra-repetida {
+        background-color: rgba(0, 0, 0, 0.81);
+        border-radius: 10px 10px 0 0;
+        padding: 15px 220px;
+        position: absolute;
+        bottom: -140px;
+        transition: transform 0.3s ease-in-out;
+        color: aliceblue;
+    }
+
+    .popup {
+        height: 90px;
+    }
+
+    .forca {
+        margin-right: 5px;
+    }
+
+}
