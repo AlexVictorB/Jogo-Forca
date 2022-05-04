@@ -262,90 +262,7 @@ body{
     text-decoration: none;
 }
 
-@media (max-width: 760px) {
-
-    body{
-        background-image:url(../assets/1.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container{
-        background: rgb(252, 251, 243);
-        padding: 0.5rem;
-        border-radius: 10px;
-        box-shadow: 0 0 0.5em black;
-    
-    
-        max-height: 600px;
-        max-width: 500px;
-    
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .container-secret-word{
-        max-width: 250px;
-        height: 90px;
-        background: white;
-    
-        border: solid 3px rgb(40, 194, 143);
-        border-radius: 10px;
-    
-        margin-bottom: 20px;
-    
-        color: black;
-    
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    
-        color: rgb(6, 52, 37);
-        font-weight: 800;
-        letter-spacing: 3px;
-    }
-
-    .keyboard button {
-        width: 30px;
-        height: 20px;
-    
-        margin-top: 5px;
-        font-size: 12px;
-    }
-    
-    .key {
-        font-weight: 700;
-    }
-
-    .aviso-palavra-repetida {
-        background-color: rgba(0, 0, 0, 0.81);
-        border-radius: 10px 10px 0 0;
-        padding: 15px 220px;
-        position: absolute;
-        bottom: -90px;
-        transition: transform 0.3s ease-in-out;
-        color: aliceblue;
-    }
-
-    .popup {
-        height: 90px;
-    }
-    
-
-}
-
-
-@media (max-width: 460px) {
+@media (max-width: 660px) {
 
     body{
         background-image:url(../assets/1.png);
@@ -369,7 +286,7 @@ body{
     
     
         max-height: 500px;
-        max-width: 400px;
+        max-width: 390px;
     
         display: flex;
         align-items: center;
@@ -377,8 +294,8 @@ body{
     }
 
     .container-secret-word{
-        max-width: 170px;
-        height: 90px;
+        max-width: 150px;
+        height: 60px;
         background: white;
     
         border: solid 3px rgb(40, 194, 143);
@@ -413,9 +330,9 @@ body{
     .aviso-palavra-repetida {
         background-color: rgba(0, 0, 0, 0.81);
         border-radius: 10px 10px 0 0;
-        padding: 15px 220px;
+        padding: 15px 105px;
         position: absolute;
-        bottom: -140px;
+        bottom: -48px;
         transition: transform 0.3s ease-in-out;
         color: aliceblue;
     }
