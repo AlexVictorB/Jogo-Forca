@@ -36,3 +36,19 @@ function applyModify() {
 }
 
 applyModify()
+
+function showBackgoundOptions() {
+    let menu = document.querySelector(".menu-background")
+    console.log(menu.style.display)
+  
+
+    if(menu.style.display == "") {
+        menu.style.display = "flex"
+    } else if(menu.style.display == "flex") {
+        menu.style.display = ""
+    }
+
+    
+
+
+}

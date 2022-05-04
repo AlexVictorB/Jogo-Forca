@@ -215,8 +215,9 @@ body{
     background: rgb(252, 251, 243);
     border-radius: 5px;
     box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 25px;
     text-align: center;
+    width: 450px;
 }
 
 
@@ -232,11 +233,11 @@ body{
 
 .menu-background {
     padding: 0.5rem;
-    background: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.4);
 
-    border: solid 2px black;
+    
 
-    display: flex;
+    display: none;
     gap: 5px;
 }
 
