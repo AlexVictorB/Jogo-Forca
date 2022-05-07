@@ -11,7 +11,7 @@ function showSettingsPanel() {
         console.log(e)
         if(e.target.className == "popup-settings show" ) {
             modal.classList.remove("show")
-        }else if(e.target.className == "close-button") {
+        }else if(e.target.id == "close-button") {
             modal.classList.remove("show")
         }
 
