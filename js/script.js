@@ -48,8 +48,8 @@ for(i in json) {
 }
 
 secretWord = secretWord.toUpperCase()
-console.log(secretWord)
-console.log(tip)
+/*console.log(secretWord)*/
+/*console.log(tip)*/
 
 
 function showTip() {
